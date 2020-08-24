@@ -3,10 +3,10 @@ pipeline{
    stages{
 	stage('Build'){
 	  steps{
-	    sh '''
+	    sh """
 		./jenkins/build/build.sh mvn -B -DskipTests
 		./jenkins/build/build.sh
-	    '''		
+	    """		
           }
        }
 
