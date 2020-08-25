@@ -6,4 +6,4 @@ echo $PASS >> /tmp/.auth
 scp /tmp/.auth RAID-VM-Test:/tmp/.auth
 scp ./jenkins/deploy/publish RAID-VM-Test:/tmp/publish
 
-ssh RAID-VM-Test "/tmp/publish"
+ssh ~/.ssh/id_rsa RAID-VM-Test "/tmp/publish"
